@@ -37,7 +37,13 @@ int add(int n)
  */
 int fib(int n)
 {
-    /** Your CODE here **/
+    if (n == 0) {
+        return 0; //fib of 0==0
+    } else if (n == 1) {
+        return 1; //fibb of 1==1
+    } else {
+        return fib(n - 1) + fib(n - 2); //returs recursive calls
+    }
 }
  
  
