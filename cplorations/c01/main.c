@@ -22,7 +22,7 @@
  */
 int add(int n)
 {
-    return n*(n+1)/2;
+    return n * (n+1) /2; 
 }   
 
 
@@ -38,13 +38,6 @@ int add(int n)
 int fib(int n)
 {
     /** Your CODE here **/
-    if (n == 0) {
-        return 0;
-    } else if (n == 1) {
-        return 1;
-    } else {
-        return fib(n - 1) + fib(n - 2);
-    }
 }
  
  
@@ -60,7 +53,13 @@ int fib(int n)
  */
 int max(int arr[], int n)
 {
-    /** Your CODE here **/
+    int max_value = arr[0]; //Starts with first value 
+    for (int i = 1; i < n; i++) { //iterates 
+        if (arr[i] > max_value) { //comparison
+            max_value = arr[i]; //updates value
+        }
+    }
+    return max_value; //returs max array value
 }
 
 /* Function: sum
@@ -75,7 +74,11 @@ int max(int arr[], int n)
  */
 int sum(int arr[], int n)
 {
-    /** Your CODE here **/
+    int total = 0; //initializing total 
+    for (int i = 0; i < n; i++) { //itterating through array
+        total += arr[i]; //adds array value to total variable
+    }
+    return total; //returs sum
 }
 
 
