@@ -1,8 +1,8 @@
 /****************************************
  * C-ploration 1 for CS 271
  * 
- * [NAME] $YOUR_NAME$
- * [TERM] FALL $YEAR$
+ * [NAME] $KANNON_HERBERT$
+ * [TERM] FALL $2024$
  * 
  ****************************************/
 
@@ -22,7 +22,7 @@
  */
 int add(int n)
 {
-    /** Your CODE here **/
+    return n*(n+1)/2;
 }   
 
 
@@ -38,6 +38,13 @@ int add(int n)
 int fib(int n)
 {
     /** Your CODE here **/
+    if (n == 0) {
+        return 0;
+    } else if (n == 1) {
+        return 1;
+    } else {
+        return fib(n - 1) + fib(n - 2);
+    }
 }
  
  
